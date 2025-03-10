@@ -11,7 +11,7 @@ startpostgres:
 	-d postgres:17-alpine
 
 stoppostgres:
-	docker stop postgres12
+	docker stop postgres17
 
 migrateup:
 	cd sql/schema/ && \
