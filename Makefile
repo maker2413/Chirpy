@@ -12,3 +12,11 @@ startpostgres:
 
 stoppostgres:
 	docker stop postgres12
+
+migrateup:
+	cd sql/schema/ && \
+	goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+
+migratedown:
+	cd sql/schema/ && \
+	goose postgres postgres://postgres:postgres@localhost:5432/chirpy down
