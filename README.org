@@ -1,0 +1,25 @@
+#+TITLE: Chirpy
+
+This program was created while following along with the course on [[https://www.boot.dev/u/maker2413][Boot.dev]].
+
+To properly run Chirpy you will need a postgres database. I personally recommend
+just using a docker image, in which case you can run the following:
+#+begin_src shell
+  make startpostgres
+#+end_src
+
+You will also need to create the chirpy database:
+#+begin_src shell
+  make createdb
+#+end_src
+
+I also use [[https://github.com/pressly/goose][goose]] to apply the sql files to the postgres database, which you can
+apply with the following:
+#+begin_src shell
+  make gooseup
+#+end_src
+
+To run Chirpy you will need to do the following:
+#+begin_src shell
+  go run .
+#+end_src
