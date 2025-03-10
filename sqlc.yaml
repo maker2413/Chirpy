@@ -1,3 +1,4 @@
+# https://docs.sqlc.dev/en/latest/tutorials/getting-started-postgresql.html
 version: "2"
 sql:
   - schema: "sql/schema"

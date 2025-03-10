@@ -20,3 +20,6 @@ migrateup:
 migratedown:
 	cd sql/schema/ && \
 	goose postgres postgres://postgres:postgres@localhost:5432/chirpy down
+
+sqlc:
+	sqlc generate
