@@ -23,3 +23,9 @@ migratedown:
 
 sqlc:
 	sqlc generate
+
+build:
+	go build -o out
+
+run:
+	./out
