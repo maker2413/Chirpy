@@ -23,3 +23,8 @@ To run Chirpy you will need to do the following:
 #+begin_src shell
   go run .
 #+end_src
+
+To build the Chirpy executable you can do the following:
+#+begin_src shell
+  make build
+#+end_src
